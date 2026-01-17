@@ -1,9 +1,9 @@
--- matrix_viewer main module
+-- vector_viewer main module
 local M = {}
 local ts_parser_ok, ts_utils = pcall(require, "nvim-treesitter.ts_utils")
 local parsers_ok, parsers = pcall(require, "nvim-treesitter.parsers")
-local ui = require("matrix_viewer.ui")
-local ts = require("matrix_viewer.treesitter")
+local ui = require("vector_viewer.ui")
+local ts = require("vector_viewer.treesitter")
 
 local config = {
   max_chars = 300,             -- don't show arrays whose serialized text > max_chars
